@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="پاکستان کی بہترین بکرا فروشی سروس۔ تازہ، صحت مند اور عمدہ نسل کے بکرے براہ راست آپ کے گھر۔ ابھی واٹس ایپ پر رابطہ کریں۔"/>
+  <meta name="keywords" content="بکرا فروخت, bakra for sale, goat sale Pakistan, bakra mandi, دیسی بکرا, قربانی بکرا, goat farm Pakistan"/>
+  <meta name="author" content="الرحمان بکرا فارم"/>
+  <meta property="og:title" content="الرحمان بکرا فارم | تازہ و صحت مند بکرے"/>
+  <meta property="og:description" content="عمدہ نسل کے بکرے بہترین قیمت پر۔ گھر پہنچانے کی سہولت موجود ہے۔"/>
+  <meta property="og:type" content="website"/>
+  <title>الرحمان بکرا فارم | اعلیٰ نسل کے بکرے براہ راست فارم سے</title>
+
+  <!-- Google Fonts: Urdu + Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --green:     #1a5c2a;
+      --green-mid: #2e7d43;
+      --green-lt:  #4caf71;
+      --gold:      #c9a84c;
+      --gold-lt:   #e8c96a;
+      --cream:     #fdf6e3;
+      --cream-dk:  #f5e9c8;
+      --dark:      #0d1f11;
+      --text:      #1a2e1d;
+      --white:     #ffffff;
+      --shadow:    0 8px 32px rgba(26,92,42,.18);
+      --radius:    18px;
+      --wa-green:  #25D366;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+      background: var(--cream);
+      color: var(--text);
+      direction: rtl;
+      overflow-x: hidden;
+    }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: sticky; top: 0; z-index: 999;
+      background: var(--green);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 68px;
+      box-shadow: 0 3px 20px rgba(0,0,0,.35);
+    }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none;
+    }
+    .nav-logo .logo-icon {
+      width: 46px; height: 46px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; line-height:1;
+    }
+    .nav-logo span {
+      font-family: 'Amiri', serif;
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--white); letter-spacing: .5px;
+    }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,.88);
+      text-decoration: none; font-size: .95rem; font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold-lt); }
+
+    .nav-wa {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--wa-green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 20px; border-radius: 30px;
+      font-size: .9rem; font-weight: 700;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .nav-wa:hover { transform: scale(1.05); box-shadow: 0 4px 16px rgba(37,211,102,.4); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--green) 60%, #2d5a1b 100%);
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1920&q=90') center/cover no-repeat;
+      opacity: .22; mix-blend-mode: luminosity;
+    }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(13,31,17,.72) 0%, rgba(26,92,42,.55) 100%);
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+      animation: fadeUp .9s ease both;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-family: 'Amiri', serif;
+      font-size: .9rem; font-weight: 700;
+      padding: 6px 22px; border-radius: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 16px rgba(0,0,0,.5);
+    }
+
+    .hero h1 span { color: var(--gold-lt); }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: rgba(255,255,255,.85);
+      line-height: 2;
+      margin-bottom: 36px;
+    }
+
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+      padding: 14px 36px; border-radius: 40px;
+      font-family: 'Amiri', serif;
+      font-size: 1.1rem; font-weight: 700;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 4px 18px rgba(201,168,76,.45);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(201,168,76,.55); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,.6);
+      padding: 14px 36px; border-radius: 40px;
+      font-family: 'Amiri', serif;
+      font-size: 1.1rem; font-weight: 700;
+      text-decoration: none;
+      transition: all .2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,.12); border-color: var(--white); }
+
+    /* Stats Bar */
+    .stats-bar {
+      background: var(--green);
+      padding: 22px 5vw;
+      display: flex; justify-content: center; gap: clamp(20px,5vw,80px);
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem; font-weight: 900;
+      color: var(--gold-lt);
+    }
+    .stat-lbl {
+      font-size: .9rem; color: rgba(255,255,255,.78);
+      margin-top: 2px;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    section { padding: 80px 5vw; }
+
+    .section-label {
+      text-align: center;
+      font-size: .85rem; font-weight: 700; letter-spacing: 2px;
+      color: var(--green-lt); text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--green);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: #555; font-size: 1rem; line-height: 1.9;
+      max-width: 620px; margin: 0 auto 52px;
+    }
+
+    /* ── PRODUCT GRID ── */
+    .products { background: var(--white); }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+      max-width: 1200px; margin: 0 auto;
+    }
+
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform .3s, box-shadow .3s;
+      border: 1.5px solid rgba(26,92,42,.08);
+      display: flex; flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(26,92,42,.2);
+    }
+
+    .card-img-wrap {
+      position: relative; overflow: hidden;
+      aspect-ratio: 4/3;
+      background: #e8ede9;
+    }
+
+    .card-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .5s;
+      display: block;
+    }
+    .product-card:hover .card-img-wrap img { transform: scale(1.06); }
+
+    .card-badge {
+      position: absolute; top: 14px; right: 14px;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: .75rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 20px;
+    }
+
+    .card-body {
+      padding: 20px 22px 24px;
+      flex: 1; display: flex; flex-direction: column; gap: 10px;
+    }
+
+    .card-title {
+      font-family: 'Amiri', serif;
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--green);
+    }
+
+    .card-specs {
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .spec-tag {
+      background: #edf5ef;
+      color: var(--green-mid);
+      font-size: .78rem; font-weight: 600;
+      padding: 4px 12px; border-radius: 20px;
+    }
+
+    .card-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem; font-weight: 900;
+      color: var(--green);
+    }
+    .card-price span { font-size: .85rem; font-weight: 400; color: #777; }
+
+    .card-desc { font-size: .9rem; color: #555; line-height: 1.85; }
+
+    .btn-buy {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--wa-green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 13px 20px; border-radius: 12px;
+      font-family: 'Amiri', serif;
+      font-size: 1rem; font-weight: 700;
+      transition: transform .2s, box-shadow .2s;
+      margin-top: auto;
+    }
+    .btn-buy:hover { transform: scale(1.03); box-shadow: 0 6px 20px rgba(37,211,102,.35); }
+
+    /* ── WHY US ── */
+    .why { background: var(--cream-dk); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 28px; max-width: 1100px; margin: 0 auto;
+    }
+
+    .why-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform .3s;
+    }
+    .why-card:hover { transform: translateY(-4px); }
+
+    .why-icon {
+      font-size: 2.8rem; margin-bottom: 16px;
+    }
+
+    .why-card h3 {
+      font-family: 'Amiri', serif;
+      font-size: 1.2rem; color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .why-card p { font-size: .88rem; color: #666; line-height: 1.9; }
+
+    /* ── TESTIMONIALS ── */
+    .testi { background: var(--green); }
+    .testi h2.section-title,
+    .testi .section-label { color: var(--gold-lt); }
+    .testi .section-sub { color: rgba(255,255,255,.7); }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px; max-width: 1100px; margin: 0 auto;
+    }
+
+    .testi-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius);
+      padding: 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .testi-stars { color: var(--gold-lt); font-size: 1.1rem; margin-bottom: 12px; }
+
+    .testi-card p { color: rgba(255,255,255,.88); line-height: 2; font-size: .95rem; margin-bottom: 16px; }
+
+    .testi-author { color: var(--gold-lt); font-family: 'Amiri', serif; font-weight: 700; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--green) 100%);
+      text-align: center; padding: 80px 5vw;
+    }
+    .cta-banner h2 {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: var(--white); margin-bottom: 14px; line-height: 1.4;
+    }
+    .cta-banner p { color: rgba(255,255,255,.78); margin-bottom: 36px; font-size: 1.05rem; line-height: 2; }
+
+    .btn-wa-big {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: var(--wa-green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px 44px; border-radius: 50px;
+      font-family: 'Amiri', serif;
+      font-size: 1.25rem; font-weight: 700;
+      box-shadow: 0 6px 28px rgba(37,211,102,.5);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-wa-big:hover { transform: translateY(-3px); box-shadow: 0 10px 38px rgba(37,211,102,.6); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,.65);
+      text-align: center;
+      padding: 36px 5vw;
+      font-size: .88rem; line-height: 2.2;
+    }
+    footer strong { color: var(--gold-lt); font-family: 'Amiri', serif; }
+
+    /* ── FLOATING WA BUTTON ── */
+    .wa-float {
+      position: fixed; bottom: 28px; left: 28px; z-index: 998;
+      width: 60px; height: 60px;
+      background: var(--wa-green);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,.5);
+      animation: pulse 2s infinite;
+      text-decoration: none;
+    }
+    .wa-float svg { width: 30px; height: 30px; fill: var(--white); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,.5); }
+      50%       { box-shadow: 0 6px 40px rgba(37,211,102,.8); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero-btns { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/923001234567?text=السلام%20علیکم%20بھائی%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے" class="wa-float" target="_blank" rel="noopener" title="واٹس ایپ پر رابطہ کریں">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
+
+<!-- ──────────── NAVBAR ──────────── -->
+<nav>
+  <a class="nav-logo" href="#">
+    <div class="logo-icon">🐐</div>
+    <span>الرحمان بکرا فارم</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#products">بکرے</a></li>
+    <li><a href="#why">ہم کیوں</a></li>
+    <li><a href="#contact">رابطہ</a></li>
+  </ul>
+  <a href="https://wa.me/923001234567" class="nav-wa" target="_blank">
+    📱 ابھی خریدیں
+  </a>
+</nav>
+
+<!-- ──────────── HERO ──────────── -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🌟 پاکستان کا نمبر ۱ بکرا فارم</div>
+    <h1>اعلیٰ نسل کے <span>تازہ و صحت مند</span> بکرے — براہ راست فارم سے</h1>
+    <p>دیسی، بیتل، توڑی پال اور قربانی کے بکرے دستیاب ہیں۔<br/>گھر پہنچانے کی سہولت • ویٹرنری سرٹیفکیٹ • 100% تسلی کی گارنٹی</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary">🐐 بکرے دیکھیں</a>
+      <a href="https://wa.me/923001234567" class="btn-secondary" target="_blank">📲 واٹس ایپ پر رابطہ</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-lbl">خوش گاہک</div></div>
+  <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">سال کا تجربہ</div></div>
+  <div class="stat"><div class="stat-num">50+</div><div class="stat-lbl">نسلیں دستیاب</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">تسلی کی ضمانت</div></div>
+</div>
+
+<!-- ──────────── PRODUCTS ──────────── -->
+<section class="products" id="products">
+  <div class="section-label">ہمارے بکرے</div>
+  <h2 class="section-title">منتخب اعلیٰ نسل کے بکرے</h2>
+  <p class="section-sub">ہر بکرہ ڈاکٹری معائنے اور ویکسینیشن کے بعد فروخت کیا جاتا ہے — صحت اور معیار کی مکمل ضمانت</p>
+
+  <div class="product-grid">
+
+    <!-- Card 1 -->
+    <div class="product-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=90" alt="دیسی بکرا برائے فروخت" loading="lazy"/>
+        <div class="card-badge">🔥 مشہور</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">دیسی بکرا — چوائس نمبر ۱</div>
+        <div class="card-specs">
+          <span class="spec-tag">⚖️ 30-40 کلو</span>
+          <span class="spec-tag">📅 1.5 سال</span>
+          <span class="spec-tag">✅ ویکسین شدہ</span>
+        </div>
+        <p class="card-desc">خالص دیسی نسل، مضبوط جسم، صحت مند اور چست۔ قربانی اور گھریلو ضرورت دونوں کے لیے موزوں۔</p>
+        <div class="card-price">Rs 45,000 <span>سے شروع</span></div>
+        <a href="https://wa.me/923001234567?text=مجھے%20دیسی%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے" class="btn-buy" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          ابھی خریدیں — واٹس ایپ
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=90" alt="بیتل بکرا برائے فروخت" loading="lazy"/>
+        <div class="card-badge">⭐ پریمیم</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">بیتل بکرا — اعلیٰ نسل</div>
+        <div class="card-specs">
+          <span class="spec-tag">⚖️ 40-55 کلو</span>
+          <span class="spec-tag">📅 2 سال</span>
+          <span class="spec-tag">✅ ڈاکٹری سند</span>
+        </div>
+        <p class="card-desc">بیتل نسل کا مشہور بکرا، لمبی ٹانگیں، خوبصورت رنگ۔ قربانی کے لیے بہترین انتخاب۔</p>
+        <div class="card-price">Rs 70,000 <span>سے شروع</span></div>
+        <a href="https://wa.me/923001234567?text=مجھے%20بیتل%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے" class="btn-buy" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          ابھی خریدیں — واٹس ایپ
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=90" alt="توڑی پال بکرا برائے فروخت" loading="lazy"/>
+        <div class="card-badge">🆕 نئی آمد</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">توڑی پال — خالص نسل</div>
+        <div class="card-specs">
+          <span class="spec-tag">⚖️ 25-35 کلو</span>
+          <span class="spec-tag">📅 1 سال</span>
+          <span class="spec-tag">✅ صحت مند</span>
+        </div>
+        <p class="card-desc">چھوٹے خاندانوں کے لیے بہترین، کم جگہ میں پلنے والا، کم چارہ کھانے والا پیارا بکرا۔</p>
+        <div class="card-price">Rs 35,000 <span>سے شروع</span></div>
+        <a href="https://wa.me/923001234567?text=مجھے%20توڑی%20پال%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے" class="btn-buy" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          ابھی خریدیں — واٹس ایپ
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="product-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=800&q=90" alt="قربانی بکرا عید الاضحی" loading="lazy"/>
+        <div class="card-badge">🐏 قربانی</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">قربانی بکرا — عید الاضحیٰ</div>
+        <div class="card-specs">
+          <span class="spec-tag">⚖️ 45-70 کلو</span>
+          <span class="spec-tag">📅 2+ سال</span>
+          <span class="spec-tag">✅ شرعی معیار</span>
+        </div>
+        <p class="card-desc">عید قربان کے لیے خاص طور پر پالے گئے بکرے۔ شرعی معیار کے مطابق، تندرست اور فربہ۔</p>
+        <div class="card-price">Rs 85,000 <span>سے شروع</span></div>
+        <a href="https://wa.me/923001234567?text=مجھے%20قربانی%20کے%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے" class="btn-buy" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          ابھی خریدیں — واٹس ایپ
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="product-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=90" alt="مادہ بکری دودھ والی" loading="lazy"/>
+        <div class="card-badge">🥛 دودھ والی</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">مادہ بکری — دودھ والی</div>
+        <div class="card-specs">
+          <span class="spec-tag">⚖️ 30-45 کلو</span>
+          <span class="spec-tag">🥛 2-3 لیٹر/دن</span>
+          <span class="spec-tag">✅ حاملہ بھی</span>
+        </div>
+        <p class="card-desc">روزانہ وافر دودھ دینے والی مادہ بکریاں، گھریلو ڈیری کے لیے بہترین۔ حاملہ بکریاں بھی دستیاب۔</p>
+        <div class="card-price">Rs 55,000 <span>سے شروع</span></div>
+        <a href="https://wa.me/923001234567?text=مجھے%20دودھ%20والی%20بکری%20کے%20بارے%20میں%20معلومات%20چاہیے" class="btn-buy" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          ابھی خریدیں — واٹس ایپ
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="product-card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?w=800&q=90" alt="پہاڑی بکرا نیلام" loading="lazy"/>
+        <div class="card-badge">🏔️ خاص نسل</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">پہاڑی بکرا — خالص نسل</div>
+        <div class="card-specs">
+          <span class="spec-tag">⚖️ 35-50 کلو</span>
+          <span class="spec-tag">📅 1.5 سال</span>
+          <span class="spec-tag">✅ قدرتی خوراک</span>
+        </div>
+        <p class="card-desc">پہاڑی علاقوں سے لایا گیا خالص بکرا۔ قدرتی ماحول میں پلا، صحت مند گوشت کا بہترین ذریعہ۔</p>
+        <div class="card-price">Rs 60,000 <span>سے شروع</span></div>
+        <a href="https://wa.me/923001234567?text=مجھے%20پہاڑی%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے" class="btn-buy" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L.057 23.676a.75.75 0 00.92.914l5.98-1.565A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.736 9.736 0 01-5.006-1.381l-.36-.214-3.732.978.995-3.636-.235-.374A9.719 9.719 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          ابھی خریدیں — واٹس ایپ
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /product-grid -->
+</section>
+
+<!-- ──────────── WHY US ──────────── -->
+<section class="why" id="why">
+  <div class="section-label">ہم کیوں؟</div>
+  <h2 class="section-title">ہمارا انتخاب کیوں کریں؟</h2>
+  <p class="section-sub">ہزاروں گاہکوں کا اعتماد — معیار، دیانت اور سہولت ہماری پہچان ہے</p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">🩺</div>
+      <h3>ڈاکٹری معائنہ</h3>
+      <p>ہر بکرا فروخت سے پہلے مستند ویٹرنری ڈاکٹر سے معائنہ کرایا جاتا ہے۔ ویکسینیشن سرٹیفکیٹ دیا جاتا ہے۔</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🚚</div>
+      <h3>گھر پہنچانے کی سہولت</h3>
+      <p>پاکستان بھر میں گھر تک بکرا پہنچانے کی سہولت موجود ہے۔ محفوظ اور بروقت ڈیلیوری ہماری ذمہ داری۔</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💯</div>
+      <h3>100% تسلی کی ضمانت</h3>
+      <p>اگر بکرے سے مطمئن نہ ہوں تو واپسی یا تبدیلی کی مکمل ضمانت۔ آپ کی خوشی ہماری ترجیح ہے۔</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💬</div>
+      <h3>واٹس ایپ سپورٹ</h3>
+      <p>24 گھنٹے واٹس ایپ پر رابطہ کریں۔ ویڈیو کال پر بکرا دکھانے کی سہولت بھی موجود ہے۔</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💰</div>
+      <h3>مناسب قیمت</h3>
+      <p>مارکیٹ سے کم قیمت پر اعلیٰ معیار کے بکرے۔ بلا سود آسان اقساط کی سہولت بھی دستیاب ہے۔</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🌱</div>
+      <h3>قدرتی خوراک</h3>
+      <p>ہمارے بکرے قدرتی چارے پر پالے جاتے ہیں۔ کوئی مصنوعی خوراک یا انجکشن استعمال نہیں کیا جاتا۔</p>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── TESTIMONIALS ──────────── -->
+<section class="testi" id="reviews">
+  <div class="section-label">گاہکوں کی آراء</div>
+  <h2 class="section-title">خوش گاہکوں کی باتیں</h2>
+  <p class="section-sub">ہمارے گاہک ہماری سب سے بڑی دولت ہیں</p>
+
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p>ماشاءاللہ بہت اچھا بکرا تھا، بالکل ویسا ہی جیسا تصویر میں دکھایا۔ گھر تک پہنچایا، بہت شکریہ بھائی!</p>
+      <div class="testi-author">— احمد رضا، لاہور</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p>پہلی بار آن لائن بکرا خریدا، بہت پریشان تھا لیکن الحمدللہ سب کچھ بہت اچھا رہا۔ اگلے سال بھی یہاں سے لوں گا۔</p>
+      <div class="testi-author">— عمر فاروق، کراچی</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p>قیمت بھی مناسب، بکرا بھی صحت مند اور ویکسینیشن بھی کی ہوئی۔ بہترین سروس! سب کو recommend کرتا ہوں۔</p>
+      <div class="testi-author">— زاہد حسین، اسلام آباد</div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── CTA BANNER ──────────── -->
+<section class="cta-banner" id="contact">
+  <h2>🐐 آج ہی اپنا پسندیدہ بکرا بک کروائیں!</h2>
+  <p>ابھی واٹس ایپ پر میسج کریں اور ہمارے تمام دستیاب بکروں کی ویڈیو اور تصاویر دیکھیں۔<br/>محدود تعداد — جلدی کریں!</p>
+  <a href="https://wa.me/923001234567?text=السلام%20علیکم!%20مجھے%20بکرے%20کے%20بارے%20میں%20معلومات%20چاہیے۔%20کیا%20آپ%20مجھے%20دستیاب%20بکروں%20کی%20تصاویر%20بھیج%20سکتے%20ہیں؟" class="btn-wa-big" target="_blank">
+    📲 واٹس ایپ پر ابھی رابطہ کریں
+  </a>
+</section>
+
+<!-- ──────────── FOOTER ──────────── -->
+<footer>
+  <strong>🐐 الرحمان بکرا فارم</strong><br/>
+  پاکستان بھر میں ڈیلیوری • ڈاکٹری معائنہ شدہ بکرے • 100% تسلی کی ضمانت<br/>
+  📞 واٹس ایپ: <a href="https://wa.me/923001234567" style="color:var(--gold-lt)">0300-1234567</a><br/>
+  <small style="opacity:.6">© 2025 الرحمان بکرا فارم — جملہ حقوق محفوظ ہیں</small>
+</footer>
+
+</body>
+</html>
